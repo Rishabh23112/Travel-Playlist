@@ -20,7 +20,6 @@ const AudioPlayer = () => {
     }, [isPlaying]);
 
     useEffect(() => {
-
         const id = setTimeout(() => {
             setProgress(0);
             setCurrentTime(0);
@@ -30,13 +29,19 @@ const AudioPlayer = () => {
             try { audioRef.current.pause(); } catch { /* ignore pause errors */ }
             try { audioRef.current.load(); } catch { /* ignore load errors */ }
             if (isPlayingRef.current) {
-                audioRef.current.play().catch(() => setIsPlaying(false));
+                audioRef.current.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
             }
         }, 0);
         return () => clearTimeout(id);
     }, [current, song.duration_sec]);
 
-
+    const goToTrack = (nextIndex, shouldAutoplay = isPlayingRef.current) => {
+        isPlayingRef.current = shouldAutoplay;
+        setCurrent(nextIndex);
+        setProgress(0);
+        setCurrentTime(0);
+        setDuration(songs[nextIndex].duration_sec || 0);
+    };
 
     const togglePlay = () => {
         if (!audioRef.current) return;
@@ -70,19 +75,16 @@ const AudioPlayer = () => {
         return `${minutes}:${seconds}`;
     };
 
-    const next = () => {
+    const next = (forcePlay = false) => {
         const nextIndex = (current + 1) % songs.length;
-        setCurrent(nextIndex);
-        setProgress(0);
-        setCurrentTime(0);
-        setDuration(songs[nextIndex].duration_sec || 0);
+        const shouldAutoplay = forcePlay || isPlayingRef.current;
+        goToTrack(nextIndex, shouldAutoplay);
     };
-    const prev = () => {
+
+    const prev = (forcePlay = false) => {
         const prevIndex = (current - 1 + songs.length) % songs.length;
-        setCurrent(prevIndex);
-        setProgress(0);
-        setCurrentTime(0);
-        setDuration(songs[prevIndex].duration_sec || 0);
+        const shouldAutoplay = forcePlay || isPlayingRef.current;
+        goToTrack(prevIndex, shouldAutoplay);
     };
 
     return (
@@ -146,10 +148,16 @@ const AudioPlayer = () => {
                 src={song.song_location}
                 preload="metadata"
                 onLoadedMetadata={onLoadedMetadata}
-                onPlay={() => setIsPlaying(true)}
-                onPause={() => setIsPlaying(false)}
+                onPlay={() => {
+                    isPlayingRef.current = true;
+                    setIsPlaying(true);
+                }}
+                onPause={() => {
+                    isPlayingRef.current = false;
+                    setIsPlaying(false);
+                }}
                 onTimeUpdate={onTimeUpdate}
-                onEnded={next}
+                onEnded={() => next(true)}
             />
             <style>{`
                 @keyframes spin {

@@ -2,7 +2,7 @@
   "songs": [
     {
       "id": "ilahi",
-      "name": "ilahi",
+      "name": "Ilahi",
       "artist": "Arijit Singh",
       "cover_image": "https://pagalnew.com/coverimages/Ilahi-Yeh-Jawaani-Hai-Deewani-500-500.jpg",
       "duration_sec": 228,
@@ -10,30 +10,30 @@
       "category": "road-trip"
     },
     {
-      "id": "starboy",
-      "name": "Starboy",
-      "artist": "The Weeknd",
-      "cover_image": "/images/covers/starboy.jpg",
-      "duration_sec": 230,
-      "song_location": "/songs/starboy.mp3",
+      "id": "tum_mile",
+      "name": "Tum Mile",
+      "artist": "KK",
+      "cover_image": "https://pagalnew.com/coverimages/Tum-Mile-Tum-Mile-Original-Motion-Picture-Soundtrack-500-500.jpg",
+      "duration_sec": 343,
+      "song_location": "/songs/tum_mile.mp3",
       "category": "road-trip"
     },
     {
-      "id": "save-your-tears",
-      "name": "Save Your Tears",
-      "artist": "The Weeknd",
-      "cover_image": "/images/covers/save-your-tears.jpg",
-      "duration_sec": 215,
-      "song_location": "/songs/save-your-tears.mp3",
+      "id": "Tum_Se_Hi",
+      "name": "Tum Se Hi",
+      "artist": "Mohit Chauhan",
+      "cover_image": "https://pagalnew.com/coverimages/Tum-Se-Hi-Jab-We-Met-500-500.jpg",
+      "duration_sec": 323,
+      "song_location": "/songs/Tum_Se_Hi.mp3",
       "category": "night-drive"
     },
     {
-      "id": "as-it-was",
-      "name": "As It Was",
-      "artist": "Harry Styles",
-      "cover_image": "/images/covers/as-it-was.jpg",
-      "duration_sec": 167,
-      "song_location": "/songs/as-it-was.mp3",
+      "id": "Mahi_Ve",
+      "name": "Mahi Ve",
+      "artist": "A R Rahman",
+      "cover_image": "https://pagalnew.com/coverimages/Maahi-Ve-Highway-500-500.jpg",
+      "duration_sec": 240,
+      "song_location": "/songs/Maahi_Ve_Highway.mp3",
       "category": "road-trip"
     },
     {
