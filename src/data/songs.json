@@ -1,0 +1,94 @@
+{
+  "songs": [
+    {
+      "id": "ilahi",
+      "name": "ilahi",
+      "artist": "Arijit Singh",
+      "cover_image": "https://pagalnew.com/coverimages/Ilahi-Yeh-Jawaani-Hai-Deewani-500-500.jpg",
+      "duration_sec": 228,
+      "song_location": "/songs/Ilahi.mp3",
+      "category": "road-trip"
+    },
+    {
+      "id": "starboy",
+      "name": "Starboy",
+      "artist": "The Weeknd",
+      "cover_image": "/images/covers/starboy.jpg",
+      "duration_sec": 230,
+      "song_location": "/songs/starboy.mp3",
+      "category": "road-trip"
+    },
+    {
+      "id": "save-your-tears",
+      "name": "Save Your Tears",
+      "artist": "The Weeknd",
+      "cover_image": "/images/covers/save-your-tears.jpg",
+      "duration_sec": 215,
+      "song_location": "/songs/save-your-tears.mp3",
+      "category": "night-drive"
+    },
+    {
+      "id": "as-it-was",
+      "name": "As It Was",
+      "artist": "Harry Styles",
+      "cover_image": "/images/covers/as-it-was.jpg",
+      "duration_sec": 167,
+      "song_location": "/songs/as-it-was.mp3",
+      "category": "road-trip"
+    },
+    {
+      "id": "heat-waves",
+      "name": "Heat Waves",
+      "artist": "Glass Animals",
+      "cover_image": "/images/covers/heat-waves.jpg",
+      "duration_sec": 238,
+      "song_location": "/songs/heat-waves.mp3",
+      "category": "beach"
+    },
+    {
+      "id": "levitating",
+      "name": "Levitating",
+      "artist": "Dua Lipa",
+      "cover_image": "/images/covers/levitating.jpg",
+      "duration_sec": 203,
+      "song_location": "/songs/levitating.mp3",
+      "category": "road-trip"
+    },
+    {
+      "id": "perfect",
+      "name": "Perfect",
+      "artist": "Ed Sheeran",
+      "cover_image": "/images/covers/perfect.jpg",
+      "duration_sec": 263,
+      "song_location": "/songs/perfect.mp3",
+      "category": "night-drive"
+    },
+    {
+      "id": "until-i-found-you",
+      "name": "Until I Found You",
+      "artist": "Stephen Sanchez",
+      "cover_image": "/images/covers/until-i-found-you.jpg",
+      "duration_sec": 177,
+      "song_location": "/songs/until-i-found-you.mp3",
+      "category": "night-drive"
+    },
+    {
+      "id": "golden-hour",
+      "name": "Golden Hour",
+      "artist": "JVKE",
+      "cover_image": "/images/covers/golden-hour.jpg",
+      "duration_sec": 209,
+      "song_location": "/songs/golden-hour.mp3",
+      "category": "beach"
+    },
+    {
+      "id": "night-changes",
+      "name": "Night Changes",
+      "artist": "One Direction",
+      "cover_image": "/images/covers/night-changes.jpg",
+      "duration_sec": 226,
+      "song_location": "/songs/night-changes.mp3",
+      "category": "night-drive"
+    }
+  ]
+}
