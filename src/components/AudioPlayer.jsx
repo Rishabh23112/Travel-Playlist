@@ -88,7 +88,7 @@ const AudioPlayer = () => {
     };
 
     return (
-        <div className="relative z-50 rounded-full px-5 py-4 flex items-center gap-4
+        <div className="relative z-50 rounded-full px-5 py-2 flex items-center gap-4
                         bg-transparent backdrop-blur backdrop-saturate-[1.5]
                         border border-white/15 shadow-[0_16px_40px_rgba(0,0,0,0.3)]
                         w-full max-w-md text-white isolate overflow-hidden">
@@ -134,7 +134,7 @@ const AudioPlayer = () => {
                 </button>
                 <button
                     onClick={togglePlay}
-                    className="w-[2.25rem] h-[2.25rem] flex items-center justify-center bg-white/10 hover:bg-white/20 active:scale-95 rounded-full transition-all border border-white/10 shadow-sm backdrop-blur-md text-white"
+                    className="w-9 h-9 flex items-center justify-center bg-white/10 hover:bg-white/20 active:scale-95 rounded-full transition-all border border-white/10 shadow-sm backdrop-blur-md text-white"
                 >
                     {isPlaying ? <Pause fill="currentColor" size={16} /> : <Play fill="currentColor" size={16} className="ml-0.5" />}
                 </button>
