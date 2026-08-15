@@ -1,9 +1,8 @@
 import { Pause, Play, SkipBack, SkipForward } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import songsData from "../data/songs.json";
 
-const AudioPlayer = () => {
-    const [songs] = useState(songsData.songs);
+const AudioPlayer = ({ songs = [], isActive = true }) => {
+    const [playlist, setPlaylist] = useState(songs);
     const [current, setCurrent] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
@@ -12,14 +11,36 @@ const AudioPlayer = () => {
     const audioRef = useRef(null);
     const isPlayingRef = useRef(isPlaying);
 
-    const song = songs[current];
+    const song = playlist[current] || playlist[0] || null;
 
     useEffect(() => {
+        if (!isActive && audioRef.current) {
+            audioRef.current.pause();
+            setIsPlaying(false);
+            isPlayingRef.current = false;
+        }
+    }, [isActive]);
 
+    useEffect(() => {
+        setPlaylist(songs);
+        setCurrent(0);
+        setProgress(0);
+        setCurrentTime(0);
+        setDuration(0);
+        if (audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current.currentTime = 0;
+        }
+        setIsPlaying(false);
+    }, [songs]);
+
+    useEffect(() => {
         isPlayingRef.current = isPlaying;
     }, [isPlaying]);
 
     useEffect(() => {
+        if (!song) return;
+
         const id = setTimeout(() => {
             setProgress(0);
             setCurrentTime(0);
@@ -33,14 +54,15 @@ const AudioPlayer = () => {
             }
         }, 0);
         return () => clearTimeout(id);
-    }, [current, song.duration_sec]);
+    }, [current, song?.duration_sec]);
 
     const goToTrack = (nextIndex, shouldAutoplay = isPlayingRef.current) => {
+        if (!playlist[nextIndex]) return;
         isPlayingRef.current = shouldAutoplay;
         setCurrent(nextIndex);
         setProgress(0);
         setCurrentTime(0);
-        setDuration(songs[nextIndex].duration_sec || 0);
+        setDuration(playlist[nextIndex].duration_sec || 0);
     };
 
     const togglePlay = () => {
@@ -76,16 +98,22 @@ const AudioPlayer = () => {
     };
 
     const next = (forcePlay = false) => {
-        const nextIndex = (current + 1) % songs.length;
+        if (!playlist.length) return;
+        const nextIndex = (current + 1) % playlist.length;
         const shouldAutoplay = forcePlay || isPlayingRef.current;
         goToTrack(nextIndex, shouldAutoplay);
     };
 
     const prev = (forcePlay = false) => {
-        const prevIndex = (current - 1 + songs.length) % songs.length;
+        if (!playlist.length) return;
+        const prevIndex = (current - 1 + playlist.length) % playlist.length;
         const shouldAutoplay = forcePlay || isPlayingRef.current;
         goToTrack(prevIndex, shouldAutoplay);
     };
+
+    if (!song) {
+        return null;
+    }
 
     return (
         <div className="relative z-50 rounded-full px-5 py-2 flex items-center gap-4

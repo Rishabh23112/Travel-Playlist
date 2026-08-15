@@ -1,0 +1,41 @@
+{
+  "songs": [
+    
+    {
+      "id": "Tum_Se_Hi",
+      "name": "Tum Se Hi",
+      "artist": "Mohit Chauhan",
+      "cover_image": "https://pagalnew.com/coverimages/Tum-Se-Hi-Jab-We-Met-500-500.jpg",
+      "duration_sec": 323,
+      "song_location": "/songs/Tum_Se_Hi.mp3",
+      "category": "night-drive"
+    },
+    {
+      "id": "Mahi_Ve",
+      "name": "Mahi Ve",
+      "artist": "A R Rahman",
+      "cover_image": "https://pagalnew.com/coverimages/Maahi-Ve-Highway-500-500.jpg",
+      "duration_sec": 240,
+      "song_location": "/songs/Maahi_Ve_Highway.mp3",
+      "category": "road-trip"
+    },
+    {
+      "id": "Dil_Haara",
+      "name": "Dil Haara",
+      "artist": "Sukhwinder Singh, Vishal-Shekhar",
+      "cover_image": "https://pagalnew.com/coverimages/Dil-Haara-Tashan-500-500.jpg",
+      "duration_sec": 352,
+      "song_location": "/songs/Dil_Haara.mp3",
+      "category": "power"
+    },
+    {
+      "id": "Raat_Bhar",
+      "name": "Raat Bhar",
+      "artist": "Arijit Singh",
+      "cover_image": "https://pagalnew.com/coverimages/Raat-Bhar-Heropanti-500-500.jpg",
+      "duration_sec": 326,
+      "song_location": "/songs/Raat_Bhar.mp3",
+      "category": "road-trip"
+    }
+  ]
+}
