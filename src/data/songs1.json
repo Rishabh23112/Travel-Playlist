@@ -2,40 +2,40 @@
   "songs": [
     
     {
-      "id": "Tum_Se_Hi",
-      "name": "Tum Se Hi",
-      "artist": "Mohit Chauhan",
-      "cover_image": "https://pagalnew.com/coverimages/Tum-Se-Hi-Jab-We-Met-500-500.jpg",
-      "duration_sec": 323,
-      "song_location": "/songs/Tum_Se_Hi.mp3",
-      "category": "night-drive"
+      "id": "Kabira_Lofi",
+      "name": "Kabira",
+      "artist": "Tochi Raina, Rekha Bhardwaj",
+      "cover_image": "https://i.ytimg.com/vi/yk2tHuIP59s/mqdefault.jpg",
+      "duration_sec": 185,
+      "song_location": "/songs/Kabira _ Lofi.mp3",
+      "category": "study"
     },
     {
-      "id": "Mahi_Ve",
-      "name": "Mahi Ve",
-      "artist": "A R Rahman",
-      "cover_image": "https://pagalnew.com/coverimages/Maahi-Ve-Highway-500-500.jpg",
-      "duration_sec": 240,
-      "song_location": "/songs/Maahi_Ve_Highway.mp3",
+      "id": "Teri_Jhuki_Nazar",
+      "name": "Teri Jhuki Nazar",
+      "artist": "Pritam",
+      "cover_image": "https://pagalnew.com/coverimages/Teri-Jhuki-Nazar-Film-Version-Murder-3-500-500.jpg",
+      "duration_sec": 182,
+      "song_location": "/songs/Teri_Jhuki_Nazar_Lofi.mp3",
       "category": "road-trip"
     },
     {
-      "id": "Dil_Haara",
-      "name": "Dil Haara",
-      "artist": "Sukhwinder Singh, Vishal-Shekhar",
-      "cover_image": "https://pagalnew.com/coverimages/Dil-Haara-Tashan-500-500.jpg",
-      "duration_sec": 352,
-      "song_location": "/songs/Dil_Haara.mp3",
+      "id": "Iktara",
+      "name": "Iktara",
+      "artist": "Amit Trivedi",
+      "cover_image": "https://pagalnew.com/coverimages/Iktara-Wake-Up-Sid-500-500.jpg",
+      "duration_sec": 173,
+      "song_location": "/songs/Iktara_Lofi.mp3",
       "category": "power"
     },
     {
-      "id": "Raat_Bhar",
-      "name": "Raat Bhar",
-      "artist": "Arijit Singh",
-      "cover_image": "https://pagalnew.com/coverimages/Raat-Bhar-Heropanti-500-500.jpg",
-      "duration_sec": 326,
-      "song_location": "/songs/Raat_Bhar.mp3",
-      "category": "road-trip"
+      "id": "Saibo",
+      "name": "Saibo",
+      "artist": "Sachin-Jigar",
+      "cover_image": "https://pagalnew.com/coverimages/Saibo-Shor-in-the-City-Original-Motion-Picture-Soundtrack-500-500.jpg",
+      "duration_sec": 146,
+      "song_location": "/songs/Saibo_Lofi.mp3",
+      "category": "peace"
     }
   ]
 }

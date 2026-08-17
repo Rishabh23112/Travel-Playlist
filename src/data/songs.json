@@ -46,6 +46,15 @@
       "category": "power"
     },
     {
+      "id": "Jannatein_Kahan",
+      "name": "Jannatein Kahan",
+      "artist": "KK",
+      "cover_image": "https://pagalnew.com/coverimages/Jannatein-Kahan-Jannat-2-Original-Motion-Picture-Soundtrack-500-500.jpg",
+      "duration_sec": 228,
+      "song_location": "/songs/Jannatein_Kahan.mp3",
+      "category": "power"
+    },
+    {
       "id": "Raat_Bhar",
       "name": "Raat Bhar",
       "artist": "Arijit Singh",
